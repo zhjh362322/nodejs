@@ -1,0 +1,30 @@
+doctype html
+html
+  head
+    title= title
+    meta(name="description", content="login page")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="/libs/bootstrap/dist/css/bootstrap.min.css")
+    link(rel="stylesheet", href="/libs/bootstrap/dist/css/styles.css")
+  body
+    .col-xs-10.col-xs-offset-1.col-sm-8.col-sm-offset-2.col-md-4.col-md-offset-4
+      .panel.panel-default
+        .panel-heading Log in
+        .panel-body
+          form(role="form")
+            fieldset
+              .form-group
+                input&attributes({id: 'username', name: 'username', class: 'form-control',
+                type: 'text', placeholder: 'UserName'})
+              .form-group
+                input&attributes({id: 'password', name: 'password', class: 'form-control',
+                type: 'password', placeholder: 'Password'})
+              .checkbox
+                label
+                  input(id='remember', name='remember', type='checkbox',value='Remember Me')
+                  | Remember Me
+              a.btn.btn-primary(id="login") Login
+              span= message
+script(type="text/javascript", src="/libs/jquery/dist/jquery.min.js")
+script(type="text/javascript", src="/libs/bootstrap/dist/js/bootstrap.min.js")
+script(type="text/javascript", src="/javascripts/login/login.js")

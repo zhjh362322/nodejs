@@ -1,0 +1,38 @@
+div#userModal.modal.fade(tabindex="-1")
+    .modal-dialog
+        .modal-content
+            .modal-header
+                button.close(type="button", data-dismiss="modal") &times;
+                h4.modal-title 用户信息
+            .modal-body
+                form.form-horizontal
+                    input(type="hidden", id="_id")
+                    .form-group
+                        label.col-sm-3.control-label 用户名
+                        .col-sm-7
+                            input.form-control(type="text", name="uid", id="uid")
+                    .form-group.settingUser.updateUser
+                        label.col-sm-3.control-label 密码
+                        .col-sm-7
+                            input.form-control(type="password", name="password", id="password")
+                    .form-group
+                        label.col-sm-3.control-label 姓名
+                        .col-sm-7
+                            input.form-control(type="text", name="name", id="name")
+                    .form-group.newUser.updateUser
+                        label.col-sm-3.control-label 角色
+                        .col-sm-7
+                            select.form-control(name="level", id="level")
+                                option(value="10") 普通用户
+                                option(value="50") 管理员
+                    .form-group.newUser.updateUser
+                        label.col-sm-3.control-label 状态
+                        .col-sm-7
+                            select.form-control(name="status", id="status")
+                                option(value="1") 启用
+                                option(value="0") 停用
+                .modal-footer.newUser
+                    button.btn.btn-primary(id="newUser") 创建
+                    button.btn.btn-default(type="reset") 重置
+                .modal-footer.settingUser.updateUser
+                    button.btn.btn-primary(id="updateUser") 更新

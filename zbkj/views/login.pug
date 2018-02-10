@@ -1,0 +1,28 @@
+doctype html
+html
+    head
+        title= title
+        meta(name="description", content="login page")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", type="text/css" href="/stylesheets/style.css")
+        link(rel="stylesheet", type="text/css" href="/stylesheets/login.css")
+    body.loginpage
+        .loginbox
+            .loginboxinner
+                .logo
+                    h1.logo ZBKJ
+                        span Worktile
+                    span.slogan 后台管理系统
+                form(method="post")
+                    .username
+                        .forminput
+                            input(type="text", name="username", id="username", placeholder="Username")
+                    .password
+                        .forminput
+                            input(type="password", name="password", id="password", placeholder="Password")
+                    button#login 登录
+                    .keep
+                        input(type="checkbox", name="remenber")
+                        |  记住密码
+    script(src="/libs/jquery-easyui/jquery.min.js")
+    script(src="/libs/jquery-easyui/jquery.easyui.min.js")

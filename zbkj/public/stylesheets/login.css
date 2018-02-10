@@ -1,0 +1,105 @@
+form button:active {
+    -webkit-box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+.loginpage {
+    background: #fff url(/images/patternbg.png);
+}
+.loginbox {
+    margin: 7% auto;
+    padding: 5px;
+    width: 350px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+    background: #fff;
+}
+.loginboxinner {
+    padding: 20px;
+    background: #32415a url(../images/patternbg.png);
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+.loginbox .logo {
+    text-align: center;
+}
+.loginbox .logo h1 {
+    margin-bottom: 5px;
+    border-bottom: 1px dotted #56647d;
+    line-height: normal;
+    color: #fff;
+}
+.loginbox .logo h1 > span {
+    color: #FB9337;
+}
+.loginbox form {
+    margin-top: 20px;
+}
+.loginbox .username {
+    margin-top: 20px;
+    background: #eee url(../images/icons/username.png) no-repeat 13px center;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.4);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.4);
+}
+.loginbox .forminput {
+    margin-left: 45px;
+    padding-right: 20px;
+    background-color: #fff;
+    border-left: 1px solid #ddd;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+.loginbox .password {
+    margin: 20px 0;
+    background: #eee url(../images/icons/password.png) no-repeat 13px center;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.4);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.4);
+}
+.loginbox .forminput input {
+    padding: 15px 10px;
+    width: 100%;
+    color: #666;
+    font-size: 14px;
+}
+.loginbox button {
+    padding: 15px 0;
+    width: 101%;
+    border: 0;
+    font-size: 14px;
+    color: #fff;
+    background: #f0801d url(../images/btngrad.png) repeat-x top left;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.4);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.4);
+}
+.loginbox button:hover {
+    background-color: #f0721e;
+}
+.loginbox .keep {
+    margin-top: 20px;
+    color: #ccc;
+    font-size: 11px;
+    font-weight: bold;
+}
+.loginbox .keep input {
+    margin-top: -2px;
+    margin-bottom: 1px;
+    vertical-align: middle;
+}
